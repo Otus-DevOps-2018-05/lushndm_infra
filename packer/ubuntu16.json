@@ -1,21 +1,21 @@
 {
     "variables":
         {
-            "var_type": "googlecompute",
-            "var_image_name": "reddit-base-{{timestamp}}",
-            "var_image_family": "reddit-base",
-            "var_zone": "europe-west1-b",
-            "var_ssh_username": "appuser"
+            "var_type": "",
+            "var_image_name": "",
+            "var_image_family": "",
+            "var_zone": "",
+            "var_ssh_username": ""
         },
     "builders": [
         {
-            "type": "{{user `var_type`}}",
+            "type": "googlecompute",
             "project_id": "{{user `proj_id`}}",
-            "image_name": "{{user `var_image_name`}}",
-            "image_family": "{{user `var_image_family`}}",
+            "image_name": "reddit-base-{{timestamp}}",
+            "image_family": "reddit-base",
             "source_image_family": "{{user `source_image_family`}}",
-            "zone": "{{user `var_zone`}}",
-            "ssh_username": "{{user `var_ssh_username`}}",
+            "zone": "europe-west1-b",
+            "ssh_username": "appuser",
             "machine_type": "{{user `machine_type`}}",
             "image_description": "reddit-base-image",
             "disk_size": "10",

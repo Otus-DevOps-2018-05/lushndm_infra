@@ -1,7 +1,5 @@
 {
-	"variables": {
-		"proj_id": null,
-		"source_image_family": null,
-		"machine_type": ""
-	}
+	"proj_id": "infra-207413",
+	"source_image_family": "reddit-full",
+	"machine_type": "f1-micro"
 }

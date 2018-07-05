@@ -1,0 +1,10 @@
+{
+	"proj_id": "infra-207413",
+	"source_image_family": "ubuntu-1604-lts",
+	"ssh_username": "appuser",
+	"image_description": "Image for reddit-app",
+	"disk_size": "10",
+	"disk_type": "pd-standard",
+	"tags": "puma-server",
+	"network": "default"
+}

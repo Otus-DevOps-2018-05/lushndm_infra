@@ -48,3 +48,15 @@ gcloud compute --project=infra-207413 firewall-rules create default-puma-server 
 testapp_IP = 35.205.166.38
 testapp_port = 9292
 ```
+
+### Homework-05 (packer-base)
+#### 1. Ubuntu16.json (fried VM):
+На основе шаблона ubuntu16.json создал образ.
+На основе этого образа запустил инстанс, и запустил на нем приложение.
+#### 2. Параметризация шаблона:
+Добавил пользовательские переменные в шаблон ubuntu16.json.
+Добавил пользовательские переменные в variables.json.
+#### 3. Immutable.json (baked VM):
+Через шаблон immutable.json "запёк” (bake) в образ VM все зависимости приложения и сам код приложения.
+Добавил puma.service в systemd образа VM.
+Создал shell-скрипт create-reddit-vm.sh для запуска VM с помощью командной строки и утилиты gcloud.

@@ -10,4 +10,4 @@ public_key_path = "~/.ssh/appuser.pub"
 
 private_key = "~/.ssh/appuser"
 
-count = "2"
+count = "1"

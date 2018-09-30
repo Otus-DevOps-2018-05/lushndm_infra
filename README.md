@@ -1,6 +1,14 @@
 # lushndm_infra
 lushndm Infra repository
 
+### Homework-09 (ansible-2)
+ - Один плейбук - один сценарий (reddit_app.yml).
+ - Один плейбук - несколько сценариев (reddit_app2.yml).
+ - Несколько сценариев (app.yml, db.yml, deploy.yml, site.yml).
+ - *Dynamic inventory с помощью gce.py, gce.ini и inventory.json.
+ - Провижининг в Packer (packer_app.yml, packer_db.yml).
+ - Интегрирация Ansible в Packer.
+
 ### Homework-08 (ansible-1)
  - Установлен ansible.
  - Настроен ansible.cfg.

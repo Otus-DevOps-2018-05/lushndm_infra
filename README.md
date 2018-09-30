@@ -1,6 +1,15 @@
 # lushndm_infra
 lushndm Infra repository
 
+### Homework-08 (ansible-1)
+ - Установлен ansible.
+ - Настроен ansible.cfg.
+ - Настроен inventory.
+ - Настроен inventory.yml.
+ - Запущен playbook clone.yml с модулем git.
+ - Выполнение плейбука clone.yml после ```ansible app -m command -a 'rm -rf ~/reddit'``` получает в ответ ```changed=1```, так как плейбук скопировал репозиторий в папку ~/redddit из-за его отсутствия на хосте appsever.
+ - * Реализован динамический inventory через inventory.json и inventory.sh.
+ 
 ### Homework-07 (terraform-2)
  - Added default-allow-ssh rule into main.tf. And imported default-allow-ssh rule into tfstate.
  - Added resource google_compute_address в main.tf. And link it to access_config in app instance.

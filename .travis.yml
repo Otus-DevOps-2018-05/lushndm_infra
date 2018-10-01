@@ -14,8 +14,11 @@ install:
 - touch ~/.ssh/appuser.pub
 script:
 - cd ansible && ansible-lint -x ANSIBLE0011 -v playbooks/*.yml
-- cd ../ && find packer -name "*.json" -type f -print0 | xargs -0 -n1 packer validate -var-file=packer/variables.json.example
-- cd terraform/stage && terraform init -backend=false && tflint --var-file=terraform.tfvars.example && terraform validate -var-file=terraform.tfvars.example
+- cd ../ && packer validate -var-file=packer/variables.json.example packer/app.json
+- packer validate -var-file=packer/variables.json.example packer/db.json
+- cd packer && packer validate -var-file=variables.json.example ubuntu16.json
+- cd packer && packer validate -var-file=variables.json.example immutable.json
+- cd ../terraform/stage && terraform init -backend=false && tflint --var-file=terraform.tfvars.example && terraform validate -var-file=terraform.tfvars.example
 - cd ../prod && terraform init -backend=false && tflint --var-file=terraform.tfvars.example && terraform validate -var-file=terraform.tfvars.example
 
 notifications:

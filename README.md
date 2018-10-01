@@ -1,5 +1,13 @@
-# lushndm_infra
-lushndm Infra repository
+# lushndm_infra repository
+[![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/lushndm_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2018-05/lushndm_infra)
+
+### Homework-10 (ansible-3)
+ - App and db ansible roles initialized.
+ - App.yml and db.yml edited for work with ansible app and db roles.
+ - Added prod and stage ansible enviroments. Reorganized folders at ansible directory.
+ - Added ansible-galaxy role jdauphant.nginx for proxy reddit-app to port 80.
+ - Added vault.key for Ansible Vault. Created users.yml for add users with encrypted credentials to instances.
+ - Added Travis tests with ansible-lint, packer validate and tflint. Added Build status to README.md.
 
 ### Homework-09 (ansible-2)
  - Один плейбук - один сценарий (reddit_app.yml).

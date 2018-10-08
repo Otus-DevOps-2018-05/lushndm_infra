@@ -8,7 +8,7 @@
  - Added vars to Vagrantfile for correct proxy by nginx role.
  - Created molecule instance by db role. Added 27017 port listening check to test_default.py.
  - Added app and db roles to packer_app.yml and packer_db.yml. Added tags for ansible to packer's app.json and db.json.
- - Moved db role from infra repository to standalone db repository.
+ - Moved db role from infra repository to standalone db repository. 
 
 ### Homework-10 (ansible-3)
  - App and db ansible roles initialized.

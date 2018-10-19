@@ -1,6 +1,15 @@
 # lushndm_infra repository
 [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/lushndm_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2018-05/lushndm_infra)
 
+### Homework-11 (ansible-4)
+ - Added config file Vagrant for appserver and dbserver VMs.
+ - Added ansible provisioning to Vagrantfile. Added base.yml for install python for Ansible. Added tasks install_mongo.yml and config_mongo.yml to db role. Added tasks ruby.yml and puma.yml to app role.
+ - Parametrized roles by adding var deploy_user.
+ - Added vars to Vagrantfile for correct proxy by nginx role.
+ - Created molecule instance by db role. Added 27017 port listening check to test_default.py.
+ - Added app and db roles to packer_app.yml and packer_db.yml. Added tags for ansible to packer's app.json and db.json.
+ - Moved db role from infra repository to standalone db repository. 
+
 ### Homework-10 (ansible-3)
  - App and db ansible roles initialized.
  - App.yml and db.yml edited for work with ansible app and db roles.

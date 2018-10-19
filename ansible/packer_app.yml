@@ -1,0 +1,13 @@
+---
+- name: Install Ruby
+  hosts: all
+  become: true
+  tasks:
+    - name: Install a list of packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+        - ruby-full
+        - ruby-bundler
+        - build-essential

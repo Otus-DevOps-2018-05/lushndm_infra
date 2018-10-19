@@ -5,3 +5,7 @@ variables.json
 *.tfvars
 .terraform/
 .deleted/
+*.retry
+ansible/key.json
+ansible/vault.key
+ansible/gce.ini

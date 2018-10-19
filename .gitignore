@@ -9,3 +9,7 @@ variables.json
 ansible/key.json
 ansible/vault.key
 ansible/gce.ini
+key.json
+vault.key
+gce.ini
+jdauphant.nginx

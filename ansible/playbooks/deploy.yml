@@ -2,7 +2,7 @@
 - name: Deploy App
   hosts:
     - app
-    - reddit-app
+
   tasks:
     - name: Fetch the latest version of application code
       git:
@@ -10,7 +10,7 @@
         dest: /home/appuser/reddit
         version: monolith
       notify: restart puma
-     
+
     - name: Bundle install
       bundler:
         state: present
